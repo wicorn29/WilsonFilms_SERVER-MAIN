@@ -1,0 +1,21 @@
+<script type="text/javascript">
+function goFullscreen(id) {
+  var element = document.getElementById(id);       
+  if (element.mozRequestFullScreen) {
+    element.mozRequestFullScreen();
+  } else if (element.webkitRequestFullScreen) {
+    element.webkitRequestFullScreen();
+  }  
+}
+</script>
+
+
+
+
+<video class="video_player" id="player" width="100%" controls="controls"<video controls allowfulscreen> autoplay="autoplay">
+  <source src="https://rr2---sn-vgqsknse.c.drive.google.com/videoplayback?expire=1660287862&ei=NsP1Yu_1NfWap84PpoquoAU&ip=50.39.151.100&cp=QVRLUkNfVlhUQ1hPOjdBUVpsY0hBMjhKdmhZM2NHY2lTTjgweThqQmxpcjhBOUN0bG5QZ0lzZ3c&id=f2bd23f41f43526c&itag=18&source=webdrive&requiressl=yes&ttl=transient&susc=dr&driveid=1pchcV7AVu13tN7iF4WRLHtl4XzWpMjeo&app=explorer&mime=video/mp4&vprv=1&prv=1&dur=5729.709&lmt=1660268649036554&subapp=DRIVE_WEB_FILE_VIEWER&txp=0011224&sparams=expire,ei,ip,cp,id,itag,source,requiressl,ttl,susc,driveid,app,mime,vprv,prv,dur,lmt&sig=AOq0QJ8wRAIgOvx3A4iA6Pe1zqLdSKP4dEFF8sysJHUQ8vcjafTZNKACIEBc-00gurzynHeDsXVyde6qWWZVBEogF2syYrejE3yC&cpn=fOf1katmpEoGCpxI&c=WEB_EMBEDDED_PLAYER&cver=1.20220809.01.00&redirect_counter=1&cm2rm=sn-nx5zs7s&req_id=74ac96f196ada3ee&cms_redirect=yes&cmsv=e&mh=04&mm=34&mn=sn-vgqsknse&ms=ltu&mt=1660273248&mv=m&mvi=2&pl=18&lsparams=mh,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRgIhAPCa0l5WHTUGOnrW-aRNfy_I1VLb2-w2TZeBHnO0qZOlAiEApI5gc_RwXjDSEZOFSUQ9tJuVeMW_q4zQXBub1k72LsI%3D"/>
+  Your browser does not support the HTML5 video tag.  Use a better browser!
+</video>
+<button onclick="goFullscreen('player'); return false">
+  Fullscreen
+</button>
